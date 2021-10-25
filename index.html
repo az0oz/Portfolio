@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Abdulaziz Alabdulatheam">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <a href="#" id="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-section" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills-section" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects-section" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact-section" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Hey there,<br> <span>My name is Abdulaziz Alabdulatheam </span></h1>
+            <h2>I am a Computer Information Systems Graduate from KFU</h2>
+            <a href="#about-section" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="heading">
+            <h1>About Me</h1>
+            <hr>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>I am an aspiring Web Developer,</h2>
+                <br>
+                <p>I graduated in 2020 majoring in Information System Technology. I would believe I am a hardworking,
+                    detail-oriented individual, looking to expand my skills and knowledge in
+                    the IT industry. I am very passionate about web development and utilizing the latest web technology
+                    to develop fullstack web applications. I am eager to enhance my skills throughout my future
+                    opportunities and grow as a technical-savvy
+                    individual and as a human.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="./images/coding_pic.png" alt="coding picture" />
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills-section">
+        <div class="heading">
+            <h1>My Skills</h1>
+            <hr>
+        </div>
+        <div class="skills-content">
+            <div class="skills-item">
+                <div class="skills-description">
+                    <img src="./images/web-development.png" alt="web design">
+                    <h1>Web Development</h1>
+                </div>
+            </div>
+            <div class="skills-description">
+                <img src="./images/database-development.png" alt="web design">
+                <h1>Database Development</h1>
+
+            </div>
+            <div class="skills-description">
+                <img src="./images/system-analysis.png" alt="web design">
+                <h1>System Analysis</h1>
+
+            </div>
+            <div class="skills-description">
+                <img src="./images/research.png" alt="web design">
+                <h1>Research & Fact-finding</h1>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects-section">
+        <div class="heading">
+            <h1>My Projects</h1>
+            <hr>
+        </div>
+        <div class="projects-content">
+            <div class="projects-item">
+                <img src="./images/MedAccess_logo.png" width="300px" height="80px" alt="MedAccess logo">
+                <h1>MedAccess</h1>
+                <p>Graduation project focused on developing a decentralized application using Web3.js, IPFS, Metamak,
+                    IPFS, jQuery, Bootstrap, NodeJS, MongoDB and webpack</p>
+                <a href="https://github.com/az0oz/MedAccess" target="_blank" class="btn">View</a>
+            </div>
+            <div class="projects-item">
+                <img src="./images/Coffeebuilder_logo.png" width="100px" height="100px" alt="Coffee Builder">
+                <h1>Coffee Builder</h1>
+                <p>A customized coffee builder application, the project allows users to dynamically add coffee
+                    ingredients or elements as desired in a visual form</p>
+                <a href="https://github.com/az0oz/Coffee-Builder-App" target="_blank" class="btn">View</a>
+            </div>
+            <div class="projects-item">
+                <img src="./images/TechnoFinesse_logo.png" width="250px" height="60px" alt="TechnoFinesse">
+                <h1>TechnoFinesse</h1>
+                <p>A portfolio website designed to demonstrate a start-up services and goals with a contact form. The
+                    website was developed using React.js NodeJS and Express</p>
+                <a href="https://technofinesse.com" target="_blank" class="btn">View</a>
+            </div>
+            <div class="projects-item">
+                <img src="./images/Archive_project_logo.png" width="100px" height="100px"
+                    alt="Archive Graduation Projects">
+                <h1>Archive Graduation Projects</h1>
+                <p> A graduation projects web archive system developed for a client, the project developed as a
+                    SPA utilizing the MERN stack</p>
+                <a href="https://graduation-projects-archive.herokuapp.com" target="_blank" class="btn">View</a>
+            </div>
+            <div class="projects-item">
+                <img src="./images/BlogU_logo.png" width="200px" height="90px" alt="BlogU">
+                <h1>BlogU</h1>
+                <p> A two day project of a very simple demonstrational CRUD blog with Nodejs, express, Mongo and sockets
+                </p>
+                <a href="https://graduation-projects-archive.herokuapp.com" target="_blank" class="btn">View</a>
+            </div>
+            <div class="projects-item">
+                <h1>Films Rental App</h1>
+                <p>A rental management application for managing customers, films and rentals using .NET MVC and Bootstrap
+                </p>
+                <a href="https://github.com/az0oz/Film-Rental-App" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact-section">
+        <div class="heading">
+            <h1>Contact Me</h1>
+            <hr>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <textarea name="contact-message" cols="30" rows="10" placeholder="Enter Full Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="contact-info">
+            <ul class="contact-info-items">
+                <li style="text-align: left;">
+                    <p><i class="fas fa-map-marker-alt fa-2x"></i></p>
+                    <p><strong>Location.</strong></br>Ahsa, Saudi Arabia</p>
+                </li>
+                <li style="text-align: left;">
+                    <p><i class="fas fa-phone-square fa-2x"></i></p>
+                    <p><strong>Phone</strong></br>(+966) 539417770</p>
+                </li>
+                <li style="text-align: left;">
+                    <p><i class="fas fa-envelope-square fa-2x"></i></p>
+                    <p><strong>Email</strong></br>abdulazizabdullah0099@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        let toggleMenu = () => {
+            let menuToggle = document.querySelector('.toggle');
+            let menu = document.querySelector('#menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active')
+
+        }
+    </script>
+
+</body>
+
+</html>
